@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Sparkles, TrendingUp, Database, BarChart3 } from "lucide-react";
-import portrait from "@/assets/vignesh-portrait.jpg";
+import portraitAsset from "@/assets/vignesh-portrait.jpeg.asset.json";
+const portrait = portraitAsset.url;
 import { profile } from "@/lib/portfolio-data";
 
 const ROLES = [

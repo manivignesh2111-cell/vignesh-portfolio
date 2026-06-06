@@ -2,7 +2,7 @@
 
 ## 🌐 Live Portfolio
 
-**Website:** https://vignesh-data-insights.lovable.app
+**Website:** https://vignesh-portfolioinsights.lovable.app
 
 ## 👨‍💻 About Me
 

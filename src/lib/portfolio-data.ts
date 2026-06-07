@@ -1,3 +1,5 @@
+import genaiCert from "@/assets/genai-microsoft-linkedin.pdf.asset.json";
+
 export const profile = {
   name: "V. VIGNESH",
   title: "Data Analyst | Data Visualization Enthusiast",

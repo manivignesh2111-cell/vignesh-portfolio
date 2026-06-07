@@ -30,14 +30,14 @@ export function Resume() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="/resume.pdf"
+                  href={RESUME_URL}
                   download
                   className="inline-flex items-center gap-2 rounded-xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.02] transition"
                 >
                   <Download className="size-4" /> Download Resume
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href={RESUME_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold hover:shadow-glow transition"

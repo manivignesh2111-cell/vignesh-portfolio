@@ -80,7 +80,7 @@ export function Hero() {
             <button onClick={() => go("projects")} className="inline-flex items-center gap-2 rounded-xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.02] active:scale-100 transition">
               <BarChart3 className="size-4" /> View Projects
             </button>
-            <a href="/resume.pdf" download className="inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold hover:shadow-glow transition">
+            <a href={RESUME_URL} download className="inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold hover:shadow-glow transition">
               <Download className="size-4" /> Download Resume
             </a>
             <button onClick={() => go("contact")} className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-semibold hover:bg-accent transition">

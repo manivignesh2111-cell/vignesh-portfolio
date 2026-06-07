@@ -1,6 +1,6 @@
 export const profile = {
   name: "V. VIGNESH",
-  title: "Data Analyst | Aspiring Business Analyst | Data Visualization Enthusiast",
+  title: "Data Analyst | Data Visualization Enthusiast",
   location: "Kurnool, Andhra Pradesh, India",
   email: "manivignesh2111@gmail.com",
   github: "https://github.com/manivignesh2111-cell",

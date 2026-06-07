@@ -148,7 +148,6 @@ export const projects = [
   },
 ];
 
-import genaiCert from "@/assets/genai-microsoft-linkedin.pdf.asset.json";
 
 export const certifications = [
   { title: "Career Essentials in Generative AI", issuer: "Microsoft & LinkedIn", url: genaiCert.url },

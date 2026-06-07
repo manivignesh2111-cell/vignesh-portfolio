@@ -1,6 +1,10 @@
 import { Download, FileText, ShieldCheck, Eye } from "lucide-react";
 import { Section, Reveal } from "./Section";
 import { profile } from "@/lib/portfolio-data";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
+
+const RESUME_URL = resumeAsset.url;
+
 
 export function Resume() {
   return (

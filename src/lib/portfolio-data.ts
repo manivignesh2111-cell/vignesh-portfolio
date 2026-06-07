@@ -1,3 +1,5 @@
+import genaiCert from "@/assets/genai-microsoft-linkedin.pdf.asset.json";
+
 export const profile = {
   name: "V. VIGNESH",
   title: "Data Analyst | Data Visualization Enthusiast",
@@ -146,7 +148,9 @@ export const projects = [
   },
 ];
 
+
 export const certifications = [
+  { title: "Career Essentials in Generative AI", issuer: "Microsoft & LinkedIn", url: genaiCert.url },
   { title: "Data Analyst Certification", issuer: "Professional Certification" },
   { title: "Data Engineering on AWS Foundations", issuer: "Amazon Web Services" },
   { title: "Secure Data Access in Power BI", issuer: "Microsoft" },

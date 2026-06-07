@@ -68,7 +68,7 @@ export function Navbar() {
             <span className="grid place-items-center size-9 rounded-xl bg-gradient-primary text-primary-foreground shadow-glow">
               <BarChart3 className="size-5" />
             </span>
-            <span className="text-gradient">V. Vignesh</span>
+            <span className="text-gradient">V. VIGNESH</span>
           </button>
 
           <nav className="hidden lg:flex items-center gap-1">

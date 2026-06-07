@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Download, Github, Linkedin, Mail, MapPin, Sparkles, TrendingUp, Database, BarChart3 } from "lucide-react";
 import portraitAsset from "@/assets/vignesh-portrait.jpeg.asset.json";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 const portrait = portraitAsset.url;
+const RESUME_URL = resumeAsset.url;
 import { profile } from "@/lib/portfolio-data";
+
 
 const ROLES = [
   "Data Analyst",

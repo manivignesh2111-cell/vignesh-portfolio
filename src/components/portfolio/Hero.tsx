@@ -9,9 +9,7 @@ import { profile } from "@/lib/portfolio-data";
 
 const ROLES = [
   "Data Analyst",
-  "Business Analyst",
   "Data Visualization Enthusiast",
-  "ML Practitioner",
 ];
 
 function useTyping(words: string[], speed = 80, pause = 1400) {

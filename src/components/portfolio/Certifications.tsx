@@ -19,7 +19,14 @@ export function Certifications() {
                 </div>
               </div>
               <div className="mt-5 pt-4 border-t border-border/60 flex items-center gap-2 text-xs text-primary font-medium">
-                <ShieldCheck className="size-4" /> Verified Credential
+                <ShieldCheck className="size-4" />
+                {"url" in c && c.url ? (
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    View Credential
+                  </a>
+                ) : (
+                  <span>Verified Credential</span>
+                )}
               </div>
             </div>
           </Reveal>

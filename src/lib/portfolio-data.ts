@@ -146,7 +146,10 @@ export const projects = [
   },
 ];
 
+import genaiCert from "@/assets/genai-microsoft-linkedin.pdf.asset.json";
+
 export const certifications = [
+  { title: "Career Essentials in Generative AI", issuer: "Microsoft & LinkedIn", url: genaiCert.url },
   { title: "Data Analyst Certification", issuer: "Professional Certification" },
   { title: "Data Engineering on AWS Foundations", issuer: "Amazon Web Services" },
   { title: "Secure Data Access in Power BI", issuer: "Microsoft" },

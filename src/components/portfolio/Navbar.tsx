@@ -8,16 +8,8 @@ import { ThemePicker } from "./ThemePicker";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(false);
   const [active, setActive] = useState("home");
-
-  useEffect(() => {
-    const prefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const stored = localStorage.getItem("theme");
-    const isDark = stored ? stored === "dark" : prefers;
-    setDark(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+  const { dark, toggleDark } = useTheme();
 
   useEffect(() => {
     const onScroll = () => {
@@ -36,13 +28,6 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const toggleTheme = () => {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-  };
 
   const go = (id: string) => {
     setOpen(false);

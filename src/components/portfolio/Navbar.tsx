@@ -2,20 +2,14 @@ import { useEffect, useState } from "react";
 import { Menu, X, Moon, Sun, BarChart3 } from "lucide-react";
 import { navLinks } from "@/lib/portfolio-data";
 import { cn } from "@/lib/utils";
+import { useTheme } from "@/hooks/use-theme";
+import { ThemePicker } from "./ThemePicker";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dark, setDark] = useState(false);
   const [active, setActive] = useState("home");
-
-  useEffect(() => {
-    const prefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const stored = localStorage.getItem("theme");
-    const isDark = stored ? stored === "dark" : prefers;
-    setDark(isDark);
-    document.documentElement.classList.toggle("dark", isDark);
-  }, []);
+  const { dark, toggleDark } = useTheme();
 
   useEffect(() => {
     const onScroll = () => {
@@ -34,13 +28,6 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const toggleTheme = () => {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-  };
 
   const go = (id: string) => {
     setOpen(false);
@@ -92,8 +79,9 @@ export function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <ThemePicker />
             <button
-              onClick={toggleTheme}
+              onClick={toggleDark}
               aria-label="Toggle theme"
               className="grid place-items-center size-10 rounded-xl glass hover:shadow-glow transition-shadow"
             >

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Menu, X, Moon, Sun, BarChart3 } from "lucide-react";
 import { navLinks } from "@/lib/portfolio-data";
 import { cn } from "@/lib/utils";
+import { useTheme } from "@/hooks/use-theme";
+import { ThemePicker } from "./ThemePicker";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);

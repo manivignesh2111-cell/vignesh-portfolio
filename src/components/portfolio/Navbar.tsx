@@ -80,7 +80,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <button
-              onClick={toggleTheme}
+              onClick={toggleDark}
               aria-label="Toggle theme"
               className="grid place-items-center size-10 rounded-xl glass hover:shadow-glow transition-shadow"
             >

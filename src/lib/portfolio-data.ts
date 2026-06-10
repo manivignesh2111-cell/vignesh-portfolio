@@ -112,6 +112,13 @@ export const experiences = [
 
 export const projects = [
   {
+    title: "Amazon Prime Video Content Analysis Dashboard",
+    description:
+      "Built an interactive Power BI dashboard to analyze Amazon Prime Video Movies and TV Shows data. Provides insights into content distribution, ratings, genres, release year trends, and country-wise availability with interactive visualizations.",
+    tech: ["Power BI", "Power Query", "DAX", "Data Cleaning", "Data Visualization"],
+    github: "https://github.com/manivignesh2111-cell/amazon-dasboard",
+  },
+  {
     title: "Sales & Revenue Analysis Dashboard",
     description:
       "Built an interactive dashboard using Streamlit, Pandas, and Plotly to analyze sales records, revenue trends, KPIs, and business performance.",
